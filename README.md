@@ -1,11 +1,26 @@
-🏥 Smart Hospital Management SystemA core Java console application designed to manage hospital patient records efficiently using Object-Oriented Programming (OOP) principles. This is Project 01 in my advanced Java practice journey.🚀 Key Features & Concepts ImplementedObject-Oriented Design (OOPs): Modeled the real-world ecosystem into distinct entities (Patient, Hospital, and Management classes).  Encapsulation: Secured sensitive data fields such as Patient ID, Age, and Disease using strict private access modifiers and safe access via standardized structures.  Method Overloading: Implemented compile-time polymorphism by overloading the search utility to retrieve patient records either by unique Integer ID or by String Name.  Dynamic Collections Framework: Leveraged ArrayList to build a dynamic, resizable in-memory database for tracking active records without fixed-size array constraints.  Clean String Formatting: Overrode the standard .toString() method in the domain model to seamlessly display beautifully structured textual representations of objects.  🏗️ Architecture BlueprintThe system is structured across three primary modules:Patient.java: The core data model containing patient properties, constructors, and overridden formatting methods.  Hospital.java: The operational business logic engine managing addition, collection traversal, and polymorphic search utilities.  Management.java: The client interface layer driving an interactive command-line menu loop utilizing Scanner and switch-case state machines.  💻 How to Run & TestClone this repository to your local system.Compile all source files inside the terminal:Bashjavac SmartHospitalManagementSystem/*.java
-Run the main driver management file:Bashjava SmartHospitalManagementSystem.Management
-📊 Sample Interactive Menu OutputPlaintextWelcome to Smart Hospital Management System
--------------------------------------------
-1. Add New Patient
-2. Display All Patients
-3. Search Patient by ID
-4. Search Patient by Name
-5. Exit
--------------------------------------------
-Please enter your choice: 
+# 🏥 Smart Hospital Management System
+
+A production-grade Java console application designed to manage hospital patient records efficiently using Object-Oriented Programming (OOP) principles. This project marks the successful completion of **Project 01** in my advanced Java utility and architecture practice roadmap.
+
+---
+
+## 🚀 Core Features & Concepts Implemented
+
+* **Object-Oriented Design (OOPs):** Built a scalable real-world data model by dividing the system into structural layers: `Patient`, `Hospital`, and `Management` modules[cite: 35, 36].
+* **Data Encapsulation:** Secured core state fields (Patient ID, Name, Age, Disease) using proper data isolation practices.
+* **Compile-Time Polymorphism (Method Overloading):** Implemented a flexible search engine capable of resolving queries using either a unique **Integer ID** or a **String Name**.
+* **Dynamic Collections Framework:** Utilized a dynamic `ArrayList` structure to manage records in memory, overcoming the limitations of static array sizes.
+* **Scanner Stream Sanitization:** Solved the classic input-skipping bug by properly flushing the scanner carriage returns (`input.nextLine()`) during sequential dynamic inputs.
+* **Overridden String Formatters:** Customized the native `.toString()` wrapper to transform internal memory instances into cleanly readable formatted layouts.
+
+---
+
+## 🏗️ Architectural Overview
+
+The application is cleanly organized into three distinct operational layers:
+
+```text
+📦 SmartHospitalManagementSystem
+ ├── 📄 Patient.java       --> Data Model containing patient states & custom toString()
+ ├── 📄 Hospital.java      --> Core Business Logic (List handling & Overloaded Search)[cite: 35]
+ └── 📄 Management.java    --> Driver Interface driving the infinite interactive Menu loop
